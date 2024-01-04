@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>ODK Build</title>
+    <title>URC UHA Build System</title>
     <link rel="icon" href="/images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css"/>
     <link rel="stylesheet" type="text/css" href="/stylesheets/jquery-ui.min.css"/>
@@ -31,7 +31,7 @@
     <div class="loadingScreen">
       <div class="loadingMessage">
         <div class="spinner"><div class="spinnerInner"></div></div>
-        <h1>Loading <strong>ODK Build</strong></h1>
+        <h1>Loading <strong>URC UHA Build</strong></h1>
         <p class="status">loading application...</p>
       </div>
     </div>
@@ -43,7 +43,7 @@
     <% unless ConfigManager['survey_url'].nil? %>
       <div id="surveyToast" class="toast">
         <h2>Help us out?</h2>
-        <p>We're trying to improve ODK Build, and we would really like to know what you think. It will only take a couple of minutes.</p>
+        <p>We're trying to improve URC UHA Build, and we would really like to know what you think. It will only take a couple of minutes.</p>
         <a id="launchSurvey" href="<%= ConfigManager['survey_url'] %>" target="_blank">Sure!</a>
         <a id="dismissSurvey" href="#">No thanks</a>
       </div>
@@ -104,7 +104,7 @@
           <ul class="submenu">
             <li class="checkbox selected"><a href="#toggleInformation" class="toggleInformation"><span class="icon"></span>Show Information</a></li>
             <li class="divider"></li>
-            <li><a href="#aboutDialog" rel="modal">About ODK Build...</a></li>
+            <li><a href="#aboutDialog" rel="modal">About URC UHA Build...</a></li>
           </ul>
         </li>
       </ul>
@@ -153,7 +153,7 @@
           <div class="helpItem helpDrag">
             <ul>
               <li>You can hold <span class="key">Ctrl</span> (Win) or <span class="key">Option</span> (Mac) to drop a clone instead of moving the original.</li>
-              <li>You can drag between browser tabs to copy or move questions between ODK Build documents.</li>
+              <li>You can drag between browser tabs to copy or move questions between URC UHA Build documents.</li>
               <li>You can also hold <span class="key">Shift</span> while clicking on questions to select a whole range, or <span class="key">Ctrl</span> (Win) or <span class="key">Cmd</span> (Mac) to select multiple individual questions.</li>
             </ul>
           </div>
@@ -161,7 +161,7 @@
             <ul>
               <li>You can drag all selected controls at once.</li>
               <li>While dragging, you can hold <span class="key">Ctrl</span> (Win) or <span class="key">Option</span> (Mac) to drop a clone instead of moving the original.</li>
-              <li>You can drag between browser tabs to copy or move questions between ODK Build documents.</li>
+              <li>You can drag between browser tabs to copy or move questions between URC UHA Build documents.</li>
             </ul>
           </div>
         </div>
@@ -176,7 +176,7 @@
     <div class="modal narrowModal signinDialog">
       <h3>Sign in</h3>
       <div class="modalContents">
-        <p>You must have an account in order to create forms on ODK Build.</p>
+        <p>You must have an account in order to create forms on URC UHA Build.</p>
 
         <div class="errorMessage"></div>
 
@@ -198,7 +198,7 @@
         </form>
       </div>
       <div class="offlineNotice">
-        Tired of logging in? Did you know there is a <a href="https://github.com/getodk/build/releases/latest" rel="external">downloadable version of ODK Build available?</a> Simply save your forms to file from here using the File menu and you can open them there.
+        Tired of logging in? Did you know there is a <a href="https://github.com/getodk/build/releases/latest" rel="external">downloadable version of URC UHA Build available?</a> Simply save your forms to file from here using the File menu and you can open them there.
         Follow the instructions <a href="https://github.com/getodk/build/blob/master/BUILDING.md">here</a> to run Build on your machine with `docker-compose`.
       </div>
       <div class="modalButtonContainer">
@@ -267,7 +267,7 @@
 
     <div class="modal narrowModal loadLocallyDialog">
       <h3>Load Form from File</h3>
-      <p>You must choose an ODK Build form (.odkbuild) file</p>
+      <p>You must choose an URC UHA Build form (.odkbuild) file</p>
       <div class="modalContents">
         <form>
           <div class="errorMessage"></div>
@@ -320,7 +320,7 @@
 
           <label for="formProperties_submissionUrl">Submission URL</label>
           <input type="text" id="formProperties_submissionUrl" name="submissionUrl" />
-          <p>Directs your submissions somewhere other than the Aggregate that supplied the form. This is the ODK Aggregate website url with <code>Aggregate.html</code> replaced by <code>submission</code>.</p>
+          <p>Directs your submissions somewhere other than the Aggregate that supplied the form. This is the URC UHA Aggregate website url with <code>Aggregate.html</code> replaced by <code>submission</code>.</p>
 
           <label for="formProperties_autosend">Auto-send</label>
           <select id="formProperties_autosend" name="autosend">
